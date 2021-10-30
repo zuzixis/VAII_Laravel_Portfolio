@@ -9,7 +9,7 @@
       <nav>
         <ul>
           <li class="no-active">
-            <a id="btn-new-blog" href="blog-blogs.blade.php">Zrušiť</a>
+            <a id="btn-new-blog" href="{{route('blogs.index')}}">Zrušiť</a>
           </li>
         </ul>
       </nav>
@@ -19,9 +19,10 @@
     <div class="center">
       <div class="left-side">
         <h1>Nový článok</h1>
-        <form>
+        <form action="{{route('blogs.store')}}">
+            @csrf {{--Ochrana--}}
           <div class="txt_field">
-            <input id="create-title" type="text" required>
+            <input id="create-title" type="text" name="title" required>
             <span></span>
             <label for="create-title">Nadpis</label>
           </div>

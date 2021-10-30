@@ -3,22 +3,8 @@
 
 <div class="blog-body">
   <section id="first-section">
-    <div>
-      <h1>Blogy</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="blog-blogs.blade.php">Blogy</a>
-          </li>
-          <li class="active">
-            <a href="blog-list-of-bloggers.blade.php">Zoznam blogerov</a>
-          </li>
-          <li class="no-active">
-            <a id="btn-new-blog" href="create-new-blog.blade.php">Napísať nový článok</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <x-blogy.nav :activeCard="2" />
+
     <div class = "blogger-box">
       <img src="../img/my-photo.JPG" alt="Fotka profilu">
       <a href="profil.blade.php"><h3 >Zuzana Žillová</h3></a>

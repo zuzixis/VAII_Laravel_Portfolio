@@ -10,11 +10,11 @@ class BlogController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return view("blog-blogs");
     }
 
     /**
@@ -24,7 +24,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view("create-new-blog");
     }
 
     /**

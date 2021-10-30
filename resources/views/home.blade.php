@@ -2,7 +2,7 @@
 @section("content") {{----}}
 
 <div> <!--class="login-background"-->
-    <img class="abstract-background" src="../img/login-bg2.png" alt="pozadie">
+    <img class="abstract-background" src="{{asset("img/login-bg2.png")}}" alt="pozadie">
     <div>
         <div class = "main-title">
             <h1>
@@ -19,7 +19,7 @@
 <div class="body-page">
     <section>
         <div class="home-about-as">
-            <img class="body-page-photo" src="../img/question-mark.png" alt="modrý otáznik">
+            <img class="body-page-photo" src="{{asset("img/question-mark.png")}}" alt="modrý otáznik">
             <h2>Kto sme ?</h2>
             <p>
                 Portfólio je stránka, ktorá poskytuje ilustračnú interakciu medzi potenciálnym zamestnancom
@@ -31,7 +31,7 @@
 
     <section>
         <div class="home-blog">
-            <img class="body-page-photo" src="../img/blog.png" alt="Obrázok reprezentujúci blog">
+            <img class="body-page-photo" src="{{asset("img/blog.png")}}" alt="Obrázok reprezentujúci blog">
             <h2>Vyjadrite svoj názor v blogu</h2>
             <p>
                 Súčasťou našej stránky je samostatná sekcia blogov. Každý zaregistrovaný užívateľ môže vytvárať
@@ -46,7 +46,7 @@
 
     <section>
         <div class="home-portfolio">
-            <img class="body-page-photo" src="../img/portfolio-home.png" alt="Obrázok reprezentujúci portfólio">
+            <img class="body-page-photo" src="{{asset("img/portfolio-home.png")}}" alt="Obrázok reprezentujúci portfólio">
             <h2>Ukážte, čo ste vytvorili</h2>
             <p>
                 V sekcii portfóliá sa nachádza zoznam portfólií prihlásených používateľov. Každé portfólio

@@ -7,7 +7,7 @@
     <meta name="keywords" content="Portfólio, domovská stránka, základné informácie">
     <meta name="author" content="Zuzana Žillová">
     <title>Domov</title>
-    <link rel="stylesheet" href="{{asset("public/css/style.css")}}" type="text/css">
+    <link rel="stylesheet" href="{{asset("css/style.css")}}" type="text/css">
     <script src="{{asset("js/skript.js")}}"></script>
 </head>
 <body>
@@ -44,11 +44,11 @@
             <img class="btn-menu" onclick="openCloseNav()" src="{{asset("img/menu.png")}}" alt="menu">
 
             <ul id="menu-items">
-                <li class="active"><a href="home.blade.php">Domov</a></li>
-                <li><a href="blog-blogs.blade.php">Blog</a></li>
-                <li><a href="portfolios.blade.php">Portfóliá</a></li>
+                <li class="@if(in_array(\Illuminate\Support\Facades\Route::currentRouteName(), ['home'])) active @endif "><a href="{{route('home')}}/">Domov</a></li>
+                <li class="@if(in_array(\Illuminate\Support\Facades\Route::currentRouteName(), ['blogs.index', 'blogs.create' ])) active @endif"><a href="{{route('blogs.index')}}">Blog</a></li>
+                <li class="@if(in_array(\Illuminate\Support\Facades\Route::currentRouteName(), ['home'])) active @endif"><a href="{{route('home')}}">Portfóliá</a></li>
                 <li class="no-active">
-                    <a id="btn-login" href="login.blade.php">Prihlásenie</a></li>
+                    <a id="btn-login" href="{{route('home')}}">Prihlásenie</a></li>
             </ul>
 
         </nav>
